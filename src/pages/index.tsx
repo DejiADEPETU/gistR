@@ -1,4 +1,4 @@
-import { SignIn, SignOut, SignInButton, SignOutButton, useUser, SignUpButton } from "@clerk/nextjs";
+import { SignIn, SignedOut, SignInButton, SignOutButton, useUser, SignUpButton } from "@clerk/nextjs";
 import {type NextPage} from "next";
 //import x from "x";
 import Head from "next/head";
