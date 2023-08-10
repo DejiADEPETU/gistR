@@ -1,4 +1,4 @@
-import { SignIn, SignInButton, SignOutButton, useUser, SignUpButton } from "@clerk/nextjs";
+import { SignIn, SignOut, SignInButton, SignOutButton, useUser, SignUpButton } from "@clerk/nextjs";
 import {type NextPage} from "next";
 //import x from "x";
 import Head from "next/head";
@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
-        <div>
+        <div >
           {!user.isSignedIn && <SignInButton/>}
           {!!user.isSignedIn && <SignOutButton/>}
         </div>
